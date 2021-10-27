@@ -9,11 +9,14 @@ class TagParserTest extends TestCase
 {
     public function test_it_parses_a_single_tag()
 	{
+        //Given or /Arrange
 		$parser = new TagParser();
 
+        //When or Act
 		$result = $parser->parse("personal");
 		$expected = ["personal"];
 
+        //Then or Assert
 		$this->assertSame($expected, $result);
 	}
 
