@@ -11,7 +11,7 @@ class TagParser extends Model
 
     public function parse(string $tags): array
 	{
-		return preg_split("/ ?[,|] ?/", $tags); //upitnik znaci da je preshodni karakter opcioni - u ovom slucaju to je razmak
+		return preg_split("/ ?[,|!] ?/", $tags); //upitnik znaci da je preshodni karakter opcioni - u ovom slucaju to je razmak
 		//[,|] znaci da je dozvoljeno i , i |
 	}
 }
